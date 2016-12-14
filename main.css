@@ -1,6 +1,7 @@
 body{
     text-align: center;
     height: 100%;
+    background-color: #FEF8F4;
     /*disabling user text selection*/
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
