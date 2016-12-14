@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    height: 100%;
+    /*disabling user text selection*/
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+p{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-decoration-style: dashed;
+    line-height: 140%;
+}
+#cr{
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 150%
+}
+/*NAVIGATION TABLE PROPERTIES*/
+#headerWrapper{
+    position: relative;
+    width: 100%;
+}
+footer{
+    height: 100%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-color: blue;
+}
+td{
+    border-left: 1px solid black;
+    border-left-color: black;
+    vertical-align: middle;
+}
+table tr td:first-child{
+    border-left: 0px;
+}
+
+.footer, .push{
+    height: 155px;
+}
+
+a{
+    text-decoration: none;
+}
+a:active{
+    color: black;
+}
