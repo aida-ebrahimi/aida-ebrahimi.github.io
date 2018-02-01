@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../main.css" rel="stylesheet">
+        <link href="gallery.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="sidebar"> 
+            <ul><font size="5"><a href="../Photography.html" >AIDA F. EBRAHIMI</a></font></ul>
+            <ul>PROJECTS
+                <li><a href="../Photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="../Graphic-Design.html">GRAPHIC DESIGN</a></li>
+                <li><a href="../Cartography.html">CARTAGROPHY</a></li>
+            </ul>
+            <ul>CONTACT
+                <li>aida.febrahimi@gmail.com</li>
+            </ul>
+        </div>
+        
+        <div id="main-content">
+            <div class="gallery">
+                <div class="response"><img src="../images/diagnosis/diagnosis1.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis2.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis3.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis4.jpg" class="galImg" id="myImg"></div>
+            </div>
+            <div class="gallery">
+                <div class="response"><img src="../images/diagnosis/diagnosis5.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis6.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis7.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis8.jpg" class="galImg" id="myImg"></div>
+            </div>
+            <div class="gallery">
+                <div class="response"><img src="../images/diagnosis/diagnosis9.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis10.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis11.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis12.jpg" class="galImg" id="myImg"></div>
+            </div>
+            <div class="gallery">
+                <div class="response"><img src="../images/diagnosis/diagnosis13.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis14.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis15.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis16.jpg" class="galImg" id="myImg"></div>
+            </div>  
+            <div class="gallery">
+                <div class="response"><img src="../images/diagnosis/diagnosis17.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis18.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis19.jpg" class="galImg" id="myImg"></div>
+                <div class="response"><img src="../images/diagnosis/diagnosis20.jpg" class="galImg" id="myImg"></div>
+            </div>
+
+            <!-- The Modal -->         
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                
+            </div>
+            
+            <!-----java script for modal--------->
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
